@@ -1,0 +1,33 @@
+.navigation {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navigation li {
+  margin-left: 12px;
+}
+
+.navigation li:first-child {
+  margin-left: 0px;
+}
+
+.add-list {
+  display: flex;
+  position: relative;
+  padding-left: 24px;
+}
+
+.add-list-img {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+footer nav ul li {
+  margin-left: 12px;
+}
+
+footer nav ul li:first-child {
+  margin-left: 0px;
+}

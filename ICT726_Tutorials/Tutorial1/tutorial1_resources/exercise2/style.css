@@ -1,0 +1,32 @@
+body {
+  padding: 12px;
+}
+
+.class-flex {
+  display: flex;
+}
+
+.review {
+  margin-top: 24px;
+}
+
+.reviewer-name {
+  position: relative;
+  padding-left: 20px;
+}
+
+.review-icon {
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+.footer-list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-nav-list {
+  margin-left: 12px;
+}

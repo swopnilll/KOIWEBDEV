@@ -1,46 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="utf-8">
-   <title>Share Your Travels -- New York - Central Park</title>
-</head>
-<body>
-<header>
-  <h1>Share Your Travels</h1>
-  <h2>New York - Central Park</h2>
-  <nav>
-    <ul>
-	  <li>Description</li>
-	  <li>Reviews</li>
-    </ul> 
-  </nav>
-</header>
-<main>
-   <section>
-	   <h3 id="description">Description</h3>
-	   <p>Photo by Randy Connolly</p>
-	   <p>This photo of Conservatory Pond in 
-	   <a href="http://www.centralpark.com/">Central Park</a> in
-	   <a href="newyork.html">New York City</a> was 
-	   taken on October 22, 2011 with a Canon EOS 30D camera. 
-	   </p>
-		<figure>
-		 <a href="images/large-central-park.jpg"><img src="images/central-park.jpg" alt="Central Park" title="Central Park"/></a>
-		 <figcaption>Conservatory Pond in Central Park</figcaption>
-		</figure>
- 
-   </section>
-   <section>
-	   <h3 id="reviews">Reviews</h3>
-	   <div>
-		  <p>By Ricardo on <time>2016-05-23</time></p>
-		  <p>Easy on the HDR buddy.</p>
-	   </div>
-	   <hr/>
-   </section>
-</main>
-<footer>
-  <p><em>Copyright &copy; 2017 Share Your Travels</em></p>
-</footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Share Your Travels -- New York - Central Park</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="class-flex">
+        <img src="images/logo.png" alt="" />
+        <h1>Share Your Travels</h1>
+      </div>
+
+      <h2>New York - Central Park</h2>
+      <nav>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#related-photos">Related Photos</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h3 id="description">Description</h3>
+        <p>Photo by Randy Connolly</p>
+        <p>
+          This photo of Conservatory Pond in
+          <a href="http://www.centralpark.com/">Central Park</a> in
+          <a href="newyork.html">New York City</a> was taken on October 22, 2011
+          with a Canon EOS 30D camera.
+        </p>
+        <figure>
+          <a href="images/large-central-park.jpg"
+            ><img
+              src="images/central-park.jpg"
+              alt="Central Park"
+              title="Central Park"
+          /></a>
+          <figcaption>Conservatory Pond in Central Park</figcaption>
+        </figure>
+        <div class="class-flex">
+          <div>options:</div>
+          <div>
+            <img src="images/icon_download.png" alt="" />
+            <img src="images/icon_mail.png" alt="" />
+            <img src="images/icon_map.png" alt="" />
+            <img src="images/icon_up.png" alt="" />
+            <img src="images/icon_down.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Related Photos</h3>
+        <a href="images/related-large1.jpg">
+          <img src="images/related-square1.jpg" alt=""
+        /></a>
+        <a href="images/related-large2.jpg"
+          ><img src="images/related-square2.jpg" alt=""
+        /></a>
+
+        <a href="images/related-large3.jpg"
+          ><img src="images/related-square3.jpg" alt=""
+        /></a>
+      </section>
+
+      <section>
+        <h3 id="reviews">Reviews</h3>
+
+        <div class="review">
+          <div class="class-flex reviewer-name">
+            <img src="images/icon_comment.png" class="review-icon" alt="" />
+
+            <div class="">Ricardo on <time>2016-05-23</time></div>
+          </div>
+
+          <p>Easy on the HDR buddy.</p>
+
+          <hr />
+        </div>
+
+        <div class="review">
+          <div class="class-flex reviewer-name">
+            <img src="images/icon_comment.png" class="review-icon" alt="" />
+
+            <div class="">By Mubashir on <time>2022-05-23</time></div>
+          </div>
+
+          <p>Looks beautiful.</p>
+
+          <hr />
+        </div>
+
+        <div class="review">
+          <div class="class-flex reviewer-name">
+            <img src="images/icon_comment.png" class="review-icon" alt="" />
+
+            <div class="">Swopnil Acharya <time>2022-05-23</time></div>
+          </div>
+
+          <p>Mesmerizing.</p>
+
+          <hr />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="footer-list">
+          <li><a href="#Home">Home</a></li>
+          <li class="footer-nav-list"><a href="#Browse">Browse</a></li>
+          <li class="footer-nav-list"><a href="#Search">Search</a></li>
+        </ul>
+      </nav>
+      <p><em>Copyright &copy; 2017 Share Your Travels</em></p>
+    </footer>
+  </body>
 </html>
