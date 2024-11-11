@@ -1,0 +1,9 @@
+.floating {
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+
+.floating p {
+  text-align: center;
+}

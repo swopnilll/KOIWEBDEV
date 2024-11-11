@@ -1,0 +1,55 @@
+header,
+footer {
+  color: white;
+  background-color: #213643;
+}
+nav {
+  background-color: #728b96;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+}
+body {
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+#reviews {
+  border-bottom: solid 3pt #213643;
+  color: #ed8030;
+}
+
+/* p {
+  color: #983c2a;
+} */
+
+/* Updating the CSS to section p { color: #983C2A; } will only change the color of <p> elements that are descendants of <section> elements.  */
+
+section p {
+  color: #983c2a;
+}
+
+/* This will specifically style only the <p> tags that are descendants of <div> elements. */
+
+/* div p {
+  color: #983c2a;
+} */
+
+/* will only apply to direct child <p> elements of <section> elements. */
+section > p {
+  color: #983c2a;
+}
+
+/* Will style a <p> element that is an immediate sibling right after an <h3>. */
+
+/* h3 + p {
+  color: #983c2a;
+} */
+
+/* Styles all <p> elements that appear after an <h3> in the same parent element. */
+
+h3 ~ p {
+  color: #983c2a;
+}
