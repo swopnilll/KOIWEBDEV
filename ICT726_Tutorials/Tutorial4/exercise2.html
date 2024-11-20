@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script>
+      // Function to validate the form
+      function validateform() {
+        // Get form values
+        const username = document.myform.name.value.trim();
+        const password = document.myform.password.value;
+
+        // Check if the username is empty
+        if (username === "") {
+          alert("Username cannot be empty.");
+          return false;
+        }
+
+        // Check if the password is at least 8 characters long
+        if (password.length < 8) {
+          alert("Password must be at least 8 characters long.");
+          return false;
+        }
+
+        // If both validations pass
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form
+      name="myform"
+      method="post"
+      action="#"
+      onsubmit="return validateform()"
+    >
+      Name: <input type="text" name="name" /><br /><br />
+      Password: <input type="password" name="password" /><br /><br />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

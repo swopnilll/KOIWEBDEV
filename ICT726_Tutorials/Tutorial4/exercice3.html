@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <script type="text/javascript">
+      function validateLogin() {
+        // Predefined username and password
+        const validUsername = "swopnilll";
+        const validPassword = "B@neshwor10";
+
+        // Get the entered values
+        const enteredUsername = document.f1.username.value.trim();
+        const enteredPassword = document.f1.password.value;
+
+        // Validate username and password
+        if (
+          enteredUsername === validUsername &&
+          enteredPassword === validPassword
+        ) {
+          alert("Login successful!");
+          return true;
+        } else {
+          alert("Invalid username or password.");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <form name="f1" action="register.jsp" onsubmit="return validateLogin()">
+      Username: <input type="text" name="username" /><br /><br />
+      Password: <input type="password" name="password" /><br /><br />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events</title>
+  </head>
+  <body>
+    <h2>Hover over the input field</h2>
+    <input
+      type="text"
+      id="input1"
+      onmouseover="hoverEvent()"
+      onmouseout="resetBackground()"
+    />
+    <script>
+      // Function to handle mouseover event
+      function hoverEvent() {
+        document.getElementById("input1").style.background = "aqua";
+      }
+
+      // Function to reset the background color when the mouse leaves
+      function resetBackground() {
+        document.getElementById("input1").style.background = "white";
+      }
+    </script>
+  </body>
+</html>
